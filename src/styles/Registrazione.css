@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.container-pricipal {
+  background-color: #111;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  width: 90vw;
+  max-width: 400px;
+  min-height: 650px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    
+  
+  align-items: center;     /* verticale */
+}
+
+.container-header {
+  margin-bottom: 20px;
+}
+
+.container-header h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.container-header p {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.container-input {
+  text-align: left;
+  margin-top: 10px;
+}
+.container-input p {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.container-input input {
+  margin-top: 6px;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+.container-input input::placeholder {
+  color: #888;
+}
+
+.container-access {
+  margin-top: 20px;
+}
+
+.container-access button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: black;
+  width: 100%;
+  font-size: 14px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ /* QUESTOO */
+.password-requirements {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 10px;
+}
+
+.password-requirements p {
+  margin: 0px 0;
+  transition: color 0.3s ease;
+}
+ 
+.password-requirements .invalid {
+  color: #555; /* grigio scuro di default */
+}
+
+.password-requirements .valid {
+  color: white; /* bianco quando valido */
+}
+
+.container-createaccount {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container-createaccount button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-createaccount button:hover {
+  background-color: #ddd;
+}
+.container-google {
+  margin-top: 20px; /* ✅ distanza finale dal resto */
+}
+
+.container-google p {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.container-google button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px; /* ✅ margine sotto il bottone Google */
+}
+
+.loginIcon {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+}
