@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Login from "./LoginTemp";
 import Register from "./Register";
@@ -10,22 +10,22 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        {/* Route iniziale: se loggato va alla home, altrimenti login */}
-        <Route path="/" element={
-          isAuthenticated ?
-            <Navigate to="/home" /> :
-            <Navigate to="/login" />
-        } />
-
+        <Route
+          path="/"
+          element={
+            isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />
+          }
+        />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-
-        {/* Home protetta */}
-        <Route path="/home" element={
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
-        } />
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Router>
   );
